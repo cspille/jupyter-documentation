@@ -1,0 +1,96 @@
+page:
+  layout: portrait
+  margin: [0.75in, 0.75in, 0.75in, 0.75in]
+  size: A4
+base:
+  font_color: 565656
+  font_family: Helvetica
+  font_size: 12
+  line_height_length: 17
+  line_height: $base_line_height_length / $base_font_size
+  text-align: justify
+vertical_rhythm: $base_line_height_length
+heading:
+  h1_font_color: 333333
+  h1_text_transform: uppercase
+  h2_font_color: 333333
+  h2_font_size: 16
+  h2_text_transform: uppercase
+  h3_font_size: 14
+  h4_font_size: 12
+  h5_font_size: 12
+  font_size: 18
+  font_style: bold
+  line_height: 1.2
+  margin_bottom: $vertical_rhythm / 2
+  margin-top: $vertical_rhythm
+link:
+  font_color: #333333
+list:
+  indent: $base_font_size * 1.5
+ulist:
+  marker:
+    font-family: Helvetica
+header:
+  height: 0.5in
+  background-color: EEEEEE
+  font-color: 333333
+  line_height: 1
+footer:
+  height: 0.5in
+  line_height: 1
+  background-color: EEEEEE
+  font-color: 333333
+  recto:
+    right:
+      content: '*{page-number}*'
+  verso:
+    left:
+      content: '*{page-number}*'
+title-page:
+  authors:
+    content:
+      name_only: "{author}"
+      with_email: "{author} <{email}>"
+      with_url: "{url}[{author}]"
+    delimiter: ',<br>'
+title:
+  page_align: center
+  # page_background_image: image:<path_to_your_backgound_image>[]
+  page_background_color: FFFFFF
+  page_logo_align: center
+  # page_logo_image: image:<path_to_image>[]
+  page_title_top: 45%
+  page_title_font_size: 36
+  page_title_font_style: bold
+  page_title_font_color: 333333
+  page_subtitle_font_size: 26
+  page_subtitle_font_color: 0C0F1A
+  page_subtitle_font_style: bold
+  page_authors_margin_top: 13.125
+  # page_authors_font_size: $base_font_size_large
+  page_authors_font_color: 9FA8C0
+  page_email_font_size: 16
+  page_email_font_color: 9FA8C0
+image:
+  align: center
+caption:
+  align: center
+  font_color: 333333
+  font_size: 10
+table:
+  grid-color: 565656
+  align: center
+  head:
+    background-color: EEEEEE
+    font-size: 10
+    font-style: bold
+    text-transform: uppercase
+  cell:
+    padding: 2
+    font-size: 10
+codespan:
+  background-color: EEEEEE
+  border-radius: 2
+  border-offset: 2
+  font-color: 565656
